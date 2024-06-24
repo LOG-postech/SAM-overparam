@@ -1,6 +1,6 @@
 # Critical Influence of Overparameterization on Sharpness-aware Minimization
 
-This repository contains JAX/Flax source code for arXiv paper [Analyzing Sharpness-aware Minimization under Overparameterization](https://arxiv.org/abs/2311.17539) by [Sungbin Shin](https://ssbin4.github.io/)<sup>&ast;</sup>, [Dongyeop Lee](https://edong6768.github.io/)<sup>&ast;</sup>, [Maksym Andriushchenko](https://www.andriushchenko.me/), and [Namhoon Lee](https://namhoonlee.github.io/).
+This repository contains JAX/Flax source code for arXiv paper [Critical Influence of Overparameterization on Sharpness-aware Minimization](https://arxiv.org/abs/2311.17539) by [Sungbin Shin](https://ssbin4.github.io/)<sup>&ast;</sup>, [Dongyeop Lee](https://edong6768.github.io/)<sup>&ast;</sup>, [Maksym Andriushchenko](https://www.andriushchenko.me/), and [Namhoon Lee](https://namhoonlee.github.io/).
 
 ## TL;DR
 
