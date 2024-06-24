@@ -38,8 +38,8 @@ The degree of overparameterization is determined by `config.num_neurons` for MLP
 
 ## Citation
 ```
-@article{shin2024analyzing,
-  title={Analyzing Sharpness-aware Minimization under Overparameterization},
+@article{shin2024critical,
+  title={Critical Influence of Overparameterization on Sharpness-aware Minimization},
   author={Shin, Sungbin and Lee, Dongyeop and Andriushchenko, Maksym and Lee, Namhoon},
   journal={arXiv preprint arXiv:2311.17539},
   year={2024}
