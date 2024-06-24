@@ -1,16 +1,14 @@
-# Analyzing Sharpness-aware Minimization under Overparameterization
+# Critical Influence of Overparameterization on Sharpness-aware Minimization
 
 This repository contains JAX/Flax source code for arXiv paper [Analyzing Sharpness-aware Minimization under Overparameterization](https://arxiv.org/abs/2311.17539) by [Sungbin Shin](https://ssbin4.github.io/)<sup>&ast;</sup>, [Dongyeop Lee](https://edong6768.github.io/)<sup>&ast;</sup>, [Maksym Andriushchenko](https://www.andriushchenko.me/), and [Namhoon Lee](https://namhoonlee.github.io/).
 
 ## TL;DR
 
-We analyze the effects of overparameterization on several theoretical and empirical aspects of sharpness-aware minimization.
+We uncover both empirical and theoretical results that indicate a critical influence of overparameterization on SAM.
 
 ## Abstract
 
-Training an overparameterized neural network can yield minimizers of different generalization capabilities despite the same level of training loss. With evidence that suggests a correlation between sharpness of minima and their generalization errors, increasing efforts have been made to develop an optimization method to explicitly find flat minima as more generalizable solutions. However, this sharpness-aware minimization (SAM) strategy has not been studied much yet as to whether and how it is affected by overparameterization.
-
-In this work, we analyze SAM under overparameterization of varying degrees and present both empirical and theoretical results that indicate a critical influence of overparameterization on SAM. Specifically, we conduct extensive numerical experiments across various domains, and show that there exists a consistent trend that SAM continues to benefit from increasing overparameterization. We also discover compelling cases where the effect of overparameterization is more pronounced or even diminished along with a series of ablation studies. On the theoretical side, we use standard techniques in optimization and prove that SAM can achieve a linear rate of convergence under overparameterization in a stochastic setting. We also show that overparameterization can improve generalization of SAM based on an analysis of two-layer networks, and further, that the linearly stable minima found by SAM have more uniform Hessian moments compared to SGD.
+Training an overparameterized neural network can yield minimizers of different generalization capabilities despite the same level of training loss. Meanwhile, with evidence that suggests a strong correlation between the sharpness of minima and their generalization errors, increasing efforts have been made to develop optimization methods to explicitly find flat minima as more generalizable solutions. Despite its contemporary relevance to overparameterization, however, this sharpness-aware minimization (SAM) strategy has not been studied much yet as to exactly how it is affected by overparameterization. Hence, in this work, we analyze SAM under overparameterization of varying degrees and present both empirical and theoretical results that indicate a critical influence of overparameterization on SAM. At first, we conduct extensive numerical experiments across vision, language, graph, and reinforcement learning domains and show that SAM consistently improves with overparameterization. Next, we attribute this phenomenon to the interplay between the enlarged solution space and increased implicit bias from overparameterization. Further, we prove multiple theoretical benefits of overparameterization for SAM to attain (i) minima with more uniform Hessian moments compared to SGD, (ii) much faster convergence at a linear rate, and (iii) lower test error for two-layer networks. Last but not least, we discover that the effect of overparameterization is more significantly pronounced in practical settings of label noise and sparsity, and yet, sufficient regularization is necessary.
 
 ![fig](./figures/main.png)
 
